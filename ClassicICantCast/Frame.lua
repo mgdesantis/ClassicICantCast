@@ -5,7 +5,6 @@ local f = CreateFrame("Frame", "ClassicICantCast", UIParent)
 local function CheckCastError(self, event, arg1, arg2, ...)
 	if event == "UI_ERROR_MESSAGE" then
 		if arg1 == 50 then
-			print( )
 			if arg2 == SPELL_FAILED_NOT_STANDING then
 				DoEmote("STAND")
 			elseif arg2 == SPELL_FAILED_NOT_MOUNTED then
